@@ -1,13 +1,19 @@
 #include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#include <time.h>
+#include <string.h>
+#include <float.h>
+
 void main(){
   int array[4];
-  int sizeofArray = sizeof(array)/sizeof(int);
-  for(int i=0; i<sizeofArray; i++){
+  int SizeofArray = sizeof(array)/sizeof(int);
+  int total = 0;
+  for(int i=0; i<SizeofArray; i++){
 	 printf("array[%d] = ",i);
 	 scanf("%d",&array[i]);
   }
-  int total = 0;
-  for(int i=0; i< sizeofArray; i++){
+  for(int i=0; i< SizeofArray; i++){
 	 total += array[i];
   }
   printf("total = %d",total);
